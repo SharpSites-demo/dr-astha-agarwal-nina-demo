@@ -1,0 +1,12 @@
+name: Publish reviewed Dr Astha Agarwal redesign
+on:
+  push:
+    branches: [gh-pages]
+    paths: [.github/workflows/publish-reviewed-20260915.yml]
+permissions:
+  contents: write
+jobs:
+  publish:
+    uses: SharpSites-demo/sparta-gym-spa-ritik-demo/.github/workflows/publish-reviewed-html.yml@41cd0e039ca25ad2234ffc0978649d9e00875f09
+    with:
+      expected_sha256: b5dd0f920ad17d85f804fb7f5bc17b57a90a66a7ef0e496fee01e72c1a827201
